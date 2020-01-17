@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 
-const FormComponent = props => (
-  <form onSubmit={props.onFormSubmit}>
-    <h1>Our form example</h1>
-    <div>
-      <textarea onChange={props.onTextChange} value={props.text} />
-    </div>
-    <div>
-      <input type="submit" value="Submit" />
-    </div>
-  </form>
-);
+const FormComponent = props => {
+  const [open, toggle] = useState(false);
+  return (
+    <form
+      onSubmit={event => {
+        event.preventDefault();
+        props.submitAction();
+        toggle(true);
+      }}
+    >
+      <h1>Our form example</h1>
+      <div>
+        <textarea
+          onChange={event => props.textAction(event.target.value)}
+          value={props.text}
+        />
+        <dialog open={open}>
+          <p>{props.text}</p>
+          <menu>
+            <button type="button" onClick={() => toggle(false)}>Close</button>
+          </menu>
+        </dialog>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  );
+};
 
 export default FormComponent;

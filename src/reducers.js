@@ -1,3 +1,5 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux';
 
-export default combineReducers({});
+import form from './components/form/reducer';
+
+export default combineReducers({ form });
