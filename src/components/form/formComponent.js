@@ -10,7 +10,7 @@ const FormComponent = props => {
         toggle(true);
       }}
     >
-      <h1>Our form example</h1>
+      <h1>Redux Form example</h1>
       <div>
         <textarea
           onChange={event => props.textAction(event.target.value)}
