@@ -13,13 +13,15 @@ const FormComponent = props => {
       <h1>Redux Form example</h1>
       <div>
         <textarea
-          onChange={event => props.textAction(event.target.value)}
+          onChange={event => props.textAction({ text: event.target.value })}
           value={props.text}
         />
         <dialog open={open}>
           <p>{props.text}</p>
           <menu>
-            <button type="button" onClick={() => toggle(false)}>Close</button>
+            <button type="button" onClick={() => toggle(false)}>
+              Close
+            </button>
           </menu>
         </dialog>
       </div>

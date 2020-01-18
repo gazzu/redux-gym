@@ -2,12 +2,12 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-import FormContainer from './components/form/formContainer';
 import FormComponent from './components/form/formComponent';
+import rl from './components/form/rl';
 
-const Form = FormContainer(FormComponent);
+const Form = rl.Container(FormComponent);
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="">
