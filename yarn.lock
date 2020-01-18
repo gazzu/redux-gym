@@ -3080,6 +3080,13 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+cross-env@^5.2.0:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.2.1.tgz#b2c76c1ca7add66dc874d11798466094f551b34d"
+  integrity sha512-1yHhtcfAd1r4nwQgknowuUNfIT9E8dOMMspC36g45dN+iD1blloi7xp8X/xAIDnjHWyt1uQ8PHk2fkNaym7soQ==
+  dependencies:
+    cross-spawn "^6.0.5"
+
 cross-spawn@6.0.5, cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
@@ -8758,6 +8765,13 @@ redent@^3.0.0:
   dependencies:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
+
+redux-lazy@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/redux-lazy/-/redux-lazy-0.6.1.tgz#5984a9bcb2445e530a65c08671c72d19a513409b"
+  integrity sha512-413+Hb7LJHgLLcURUsHzgzOaaxRxI2qxgdCwfHkCpXPyLQUELj4I6CAxFbFscK4+fRp0hk8dWaCx6r6yzc//BQ==
+  dependencies:
+    cross-env "^5.2.0"
 
 redux-logger@^3.0.6:
   version "3.0.6"
